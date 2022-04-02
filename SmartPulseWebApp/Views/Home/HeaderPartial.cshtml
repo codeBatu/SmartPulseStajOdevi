@@ -1,0 +1,45 @@
+﻿@model List<Batu.Exam.SmartpulseInternship.Entities.Entity.IntraDayTradeHistoryInfo>
+
+<h2>SmartPulse A.Ş. Stajyer Değerlendirme Teknik Mülakat Ödevi</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tarih
+            </th>
+            <th>
+                Toplam İşlem Miktarı (MWh)
+            </th>
+            <th>
+                Toplam İş Tutarı (TL)
+            </th>
+            <th>
+                Ağırlıklı Ortalama Fiyat(TL/MWh) 
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Conract)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalTransactionQuantity)
+            </td>
+            <td>
+                @item.TotalTransactionAmount.ToString("C")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WeighAveragePrice)
+            </td>
+            <td>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

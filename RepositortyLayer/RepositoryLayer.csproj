@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Batu.Exam.SmartpulseInternship.RepositoryLayer</AssemblyName>
+    <RootNamespace>Batu.Exam.SmartpulseInternship.RepositoryLayer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Enttiy\Entities.csproj" />
+  </ItemGroup>
+
+</Project>
