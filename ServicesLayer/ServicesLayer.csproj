@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Batu.Exam.SmartpulseInternship.ServicesLayer</AssemblyName>
+    <RootNamespace>Batu.Exam.SmartpulseInternship.ServicesLayer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\RepositortyLayer\RepositortyLayer.csproj" />
+  </ItemGroup>
+
+</Project>
