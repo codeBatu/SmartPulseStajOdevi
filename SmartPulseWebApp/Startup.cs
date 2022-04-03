@@ -1,5 +1,4 @@
-using Batu.Exam.SmartpulseInternship.DataAccesLayer;
-using Batu.Exam.SmartpulseInternship.RepositoryLayer.Respository;
+
 using Batu.Exam.SmartpulseInternship.ServicesLayer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -50,6 +49,7 @@ namespace SmartPulseWebApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }

@@ -1,9 +1,9 @@
 ﻿using Batu.Exam.SmartpulseInternship.Entities.Entity;
 using System.Collections.Generic;
 using System.Linq;
-using static Batu.Exam.SmartpulseInternship.RepositoryLayer.Factory.ApiServices;
-using static Batu.Exam.SmartpulseInternship.RepositoryLayer.Util.DateTimeConvertString;
-namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Respository
+using static RepositortyLayer.Factory.ApiServices;
+using static RepositortyLayer.Util.DateTimeConvertString;
+namespace RepositortyLayer.Respository
 {
     public class IntraDayTradeHistoryRepository : IIntraDayTradeHistory
     {
@@ -27,9 +27,9 @@ namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Respository
                 .Select(mi => new IntraDayTradeHistoryInfo
                 {
                     Conract = StringParser(mi.Key),
-                    TotalTransactionAmount = mi.Sum(prd => (prd.Price * prd.Quantity) / 10),
-                    TotalTransactionQuantity = mi.Sum(prd => ((prd.Quantity) / 10)),
-                    WeighAveragePrice = mi.Average(prd => ((prd.Price / prd.Quantity)))
+                    TotalTransactionAmount = mi.Sum(prd => prd.Price * prd.Quantity / 10),
+                    TotalTransactionQuantity = mi.Sum(prd => prd.Quantity / 10),
+                    WeighAveragePrice = mi.Average(prd => prd.Price / prd.Quantity)
                 }
                 );
         }

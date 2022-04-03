@@ -1,9 +1,8 @@
-﻿
-using Batu.Exam.SmartpulseInternship.Entities.Entity;
-using Batu.Exam.SmartpulseInternship.RepositoryLayer.Respository;
+﻿using Batu.Exam.SmartpulseInternship.Entities.Entity;
+using RepositortyLayer.Respository;
 using System.Collections.Generic;
 
-namespace Batu.Exam.SmartpulseInternship.DataAccesLayer
+namespace Batu.Exam.SmartpulseInternship.DAL.DataAccesLayer
 {
     public class DALRepository
     {

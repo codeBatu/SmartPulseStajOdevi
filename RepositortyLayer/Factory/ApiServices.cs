@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Factory
+namespace RepositortyLayer.Factory
 {
     public class ApiServices
     {
@@ -15,7 +15,7 @@ namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Factory
             {
                 var response = await new HttpClient().GetAsync(GlobalValue.Url);
                 var body = JsonConvert.DeserializeObject<Root>(await response.Content.ReadAsStringAsync());
-               return body.Body.IntraDayTradeHistoryList;
+                return body.Body.IntraDayTradeHistoryList;
             }
             catch (Exception exp)
             {

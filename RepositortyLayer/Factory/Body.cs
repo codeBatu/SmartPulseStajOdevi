@@ -1,7 +1,7 @@
 ﻿using Batu.Exam.SmartpulseInternship.Entities.Entity;
 using System.Collections.Generic;
 
-namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Factory
+namespace RepositortyLayer.Factory
 {
     public class Body
     {

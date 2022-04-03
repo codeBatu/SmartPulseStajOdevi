@@ -1,4 +1,4 @@
-﻿using Batu.Exam.SmartpulseInternship.DataAccesLayer;
+﻿using Batu.Exam.SmartpulseInternship.DAL.DataAccesLayer;
 using Batu.Exam.SmartpulseInternship.Entities.Entity;
 using System.Collections.Generic;
 

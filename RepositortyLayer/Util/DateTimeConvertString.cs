@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Util
+namespace RepositortyLayer.Util
 {
     public class DateTimeConvertString
     {

@@ -1,6 +1,6 @@
-﻿using Batu.Exam.SmartpulseInternship.DataAccesLayer;
+﻿using Batu.Exam.SmartpulseInternship.DAL.DataAccesLayer;
 using Batu.Exam.SmartpulseInternship.Entities.Entity;
-using Batu.Exam.SmartpulseInternship.RepositoryLayer.Respository;
+
 using Batu.Exam.SmartpulseInternship.ServicesLayer.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -8,6 +8,7 @@ using SmartPulseWebApp.Models;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using RepositortyLayer.Respository;
 
 namespace SmartPulseWebApp.Controllers
 {

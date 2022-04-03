@@ -1,4 +1,4 @@
-﻿namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Factory
+﻿namespace RepositortyLayer.Factory
 {
     public class Root
     {

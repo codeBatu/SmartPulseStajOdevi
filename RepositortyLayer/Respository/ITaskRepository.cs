@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Batu.Exam.SmartpulseInternship.RepositoryLayer.Respository
+namespace RepositortyLayer.Respository
 {
     public interface ITaskRepository<T>
     {
